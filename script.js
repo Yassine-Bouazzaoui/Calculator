@@ -14,7 +14,7 @@ function getNumbers(input) {
     else {
         secondNumber += number;
         document.getElementById("screen").value += number;
-    }s
+    }
 
 
 }
@@ -27,28 +27,38 @@ function operatorType(input) {
 function resultCalculation() {
 
     if (operator === '+') {
-        let result = parseInt(firstNumber) + parseInt(secondNumber);
+        let result = parseFloat(firstNumber) + parseFloat(secondNumber);
 
         document.getElementById("screen").value = String(result);
+        firstNumber=String(result);
+        secondNumber='';
 
     }
     else if (operator === '-') {
-        let result = parseInt(firstNumber) - parseInt(secondNumber);
+        let result = parseFloat(firstNumber) - parseFloat(secondNumber);
 
         document.getElementById("screen").value = String(result);
+        firstNumber=String(result);
+        secondNumber='';
     }
     else if (operator === '*') {
-        let result = parseInt(firstNumber) * parseInt(secondNumber);
+        let result = parseFloat(firstNumber) * parseFloat(secondNumber);
 
         document.getElementById("screen").value = String(result);
+        firstNumber=String(result);
+        secondNumber='';
     }
     else if (operator === '/') {
-        let result = parseInt(firstNumber) / parseInt(secondNumber);
+        let result = parseFloat(firstNumber) / parseFloat(secondNumber);
         document.getElementById("screen").value = String(result);
+        firstNumber=String(result);
+        secondNumber='';
 
 
     }
-    firstNumber=result;
+
+    isOperatorTyped=false;
+
 
 }
 
