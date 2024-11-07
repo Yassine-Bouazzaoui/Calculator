@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js"></script>
+    <title>YB Calculator</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div>
+                    <input id="screen" type="text" name="display" value="">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearScreen()">
+                    
+                    <input type="button" value="/" onclick="operatorType(this)">
+                
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="getNumbers(this)">
+                    <input type="button" value="8" onclick="getNumbers(this)">
+                    <input type="button" value="9" onclick="getNumbers(this)">
+                    <input type="button" value="*" onclick="operatorType(this)">
+                
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="getNumbers(this)">
+                    <input type="button" value="5" onclick="getNumbers(this)">
+                    <input type="button" value="6" onclick="getNumbers(this)">
+                    <input type="button" value="-" onclick="operatorType(this)">
+                
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="getNumbers(this)">
+                    <input type="button" value="2" onclick="getNumbers(this)">
+                    <input type="button" value="3" onclick="getNumbers(this)">
+                    <input type="button" value="+" onclick="operatorType(this)">
+                
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="getNumbers(this)">
+                    <input type="button" value="0" onclick="getNumbers(this)">
+                    <input type="button" value="=" onclick="resultCalculation()">
+                    
+                
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
